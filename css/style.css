@@ -1,0 +1,143 @@
+/*
+  Alexandre Costa
+  alede91@gmail.com
+ */
+
+/*Import da fonte - Google fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Inter:wght@400;700&family=Lexend+Deca&family=Lobster&family=Outfit:wght@400;700&family=Poppins:wght@100;200&display=swap');
+
+/*Zera as configurações "presets" dos browsers*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Define as dimensões da página e a fonte*/
+
+html, body {
+	width: 100vw;
+	height: 100vh;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+
+}
+
+/*Define a tag main como flex tornando possível alinhar o grid propriedades flex-box*/
+
+main {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: hsl(0%, 0%, 81%);
+}
+
+::-webkit-scrollbar {
+display: none;
+}
+
+/*Container do grid*/
+
+.container {
+	width: 80%;
+	height: 80%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 40vh 40vh;
+	grid-gap: 2em;
+	
+}
+
+/*Define os quadros do grid*/
+
+.quad_1{
+	grid-column-start: 1;
+	grid-column-end: 3;
+	background: hsl(263, 55%, 52%) 
+				url("../images/bg-pattern-quotation.svg") 
+				no-repeat top right;
+
+	border-radius: 10px;
+	padding: 2em;
+
+}
+
+.quad_2{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	background: hsl(217, 19%, 35%);
+	border-radius: 10px;
+	padding: 2em;
+	
+}
+
+.quad_3{
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	background: hsl(0, 0%, 100%);
+	border-radius: 10px;
+	padding: 2em;
+	box-shadow: 10px 0px 35px  rgba(0, 0, 0, 0.2);
+}
+
+.quad_4 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	background: hsl(0, 0%, 100%);
+	border-radius: 10px;
+	padding: 2em;
+	color: hsl(0, 0%, 0%);
+	box-shadow: 10px 0px 35px  rgba(0, 0, 0, 0.2);
+}
+
+.quad_5{
+	grid-column-start: 2;
+	grid-column-end: 4;
+	background: hsl(219, 29%, 14%);
+	border-radius: 10px;
+	padding: 2em;
+	
+}
+
+/*Define um container para a imagem, nome e o status*/
+
+.container_img {
+	display: flex;
+	height: 25%;
+	align-items: center;
+	
+}
+
+/*Configura a imagem*/
+
+.img_style {
+	float: left;
+	border-radius: 50%;
+	border: 1px solid rgb(255, 255, 255);
+	margin-right: 1.5em;
+}
+
+/*Configura os textos*/
+
+.img-text h3 {
+	color: hsl(210, 46%, 95%);
+}
+
+.img-text h4 {
+	color: hsl(210, 46%, 95%);
+	opacity: 50%;
+}
+
+.text h2 {
+	color: rgb(255, 255, 255);
+	margin: 5% 0 2.5% 0;
+}
+
+.text h4{
+	opacity: 70%;
+	color: hsl(210, 46%, 95%);
+}
